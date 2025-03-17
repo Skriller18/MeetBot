@@ -72,7 +72,7 @@ class TranscriptAnalytics:
                 'word_count': len(words),
                 'unique_words': len(set(words)),
                 'top_words': dict(word_freq),
-                'sentiment_score': sentiment,
+                'interactivity_score': sentiment,
                 'question_count': len(questions),
                 'timestamp': datetime.now().isoformat()
             }
