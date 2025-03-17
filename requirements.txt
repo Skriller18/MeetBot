@@ -7,3 +7,4 @@ faiss-cpu
 langchain_google_genai
 transformers
 confluent-kafka
+nltk
