@@ -82,7 +82,7 @@ class TranscriptAnalytics:
                 'word_count': 0,
                 'unique_words': 0,
                 'top_words': {},
-                'sentiment_score': 0,
+                'interactivity_score': 0,
                 'question_count': 0,
                 'timestamp': datetime.now().isoformat()
             }
@@ -158,7 +158,7 @@ class StreamlitMonitoring:
                 return {}
             
             total_words = sum(d['word_count'] for d in self.analytics_data)
-            avg_sentiment = sum(d['sentiment_score'] for d in self.analytics_data) / len(self.analytics_data)
+            avg_sentiment = sum(d['interactivity_score'] for d in self.analytics_data) / len(self.analytics_data)
             
             all_words = {}
             for d in self.analytics_data:
@@ -169,7 +169,7 @@ class StreamlitMonitoring:
                 'total_transcripts': len(self.analytics_data),
                 'total_words': total_words,
                 'average_words_per_transcript': total_words / len(self.analytics_data),
-                'overall_sentiment': avg_sentiment,
+                'overall_interactivity': avg_sentiment,
                 'most_common_words': dict(Counter(all_words).most_common(10))
             }
         except Exception as e:

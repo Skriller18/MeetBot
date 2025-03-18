@@ -75,7 +75,7 @@ def render_analytics(analytics_summary):
         st.metric("Avg Words/Transcript", f"{analytics_summary['average_words_per_transcript']:.0f}")
     
     # Display sentiment
-    st.sidebar.metric("Overall Sentiment", f"{analytics_summary['overall_sentiment']:.2f}")
+    st.sidebar.metric("Overall Interactivity", f"{analytics_summary['overall_interactivity']:.2f}")
     
     # Display word frequency
     st.sidebar.subheader("Most Common Words")
