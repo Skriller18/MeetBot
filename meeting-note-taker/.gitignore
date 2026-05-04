@@ -1,0 +1,8 @@
+.env
+recordings/*
+transcripts/*
+!recordings/.gitkeep
+!transcripts/.gitkeep
+__pycache__/
+*.pyc
+.venv/
