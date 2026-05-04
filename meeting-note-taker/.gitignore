@@ -1,8 +1,8 @@
 .env
-recordings/*
-transcripts/*
-!recordings/.gitkeep
-!transcripts/.gitkeep
+data/
 __pycache__/
 *.pyc
 .venv/
+node_modules/
+web/dist/
+web/tsconfig.tsbuildinfo

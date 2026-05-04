@@ -1,0 +1,7 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+itsdangerous>=2.2
+python-multipart>=0.0.9
+playwright>=1.45
+openai>=1.40
+python-dotenv>=1.0
